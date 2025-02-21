@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}
+
+body {
+  background-color: #e3e3e3;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* common css */
+.d-flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.card-header {
+  background-color: #279be4;
+  padding: 1rem;
+}
+
+.border-none {
+  border: none;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+/* mnm */
+.management {
+  background-color: white;
+}
+
+h1 {
+  color: white;
+}
+
+.card-header button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #566687;
+}
+
+.card-header button:first-child {
+  margin-right: 8px;
+}
+
+/* set btn bg-color change on hover */
+.card-header button:hover {
+  background-color: #ccc;
+}
+
+/* card body */
+.card-body {
+  padding: 8px;
+}
+
+/* table list */
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px 16px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e5e5e5;
+}
+
+img.avatar {
+  width: 48px;
+  border-radius: 50%;
+}
+
+td > span.status.active::before {
+  content: "\f111";
+  font-family: "FontAwesome";
+  color: green;
+}
+
+td > span.status.inactive::before {
+  content: "\f111";
+  font-family: "FontAwesome";
+  color: #505050;
+}
+
+td > span.status.suspended::before {
+  content: "\f111";
+  font-family: "FontAwesome";
+  color: red;
+}
+
+td button.edit {
+  color: #279be4;
+}
+
+td button.delete {
+  color: rgb(198, 72, 72);
+}
+
+/* card footer*/
+.card-footer {
+  padding: 1rem;
+}
+
+.card-footer ul {
+  list-style: none;
+}
+
+.card-footer ul li {
+  align-items: center;
+}
+
+.card-footer ul li button {
+  border: none;
+  background-color: transparent;
+}
+
+.card-footer ul li button.page-number:hover {
+  background-color: #279be4;
+  color: white;
+  border-radius: 50%;
+}
