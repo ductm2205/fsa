@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+}
+
+/* main form */
+
+header {
+  margin: auto;
+}
