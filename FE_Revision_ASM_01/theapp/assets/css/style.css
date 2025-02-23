@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+img {
+    margin-bottom: -8px;
+}
+
+/* common css */
+
+.p-64 {
+    padding: 64px;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.row-padding-8 {
+    padding: 0 8px;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-bold-64 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.font-bold-36 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.common-col {
+    float: left;
+    padding: 0 8px;
+}
+
+@media (min-width: 992px) {
+
+    /* Large screens */
+    .common-col-l8 {
+        width: 66.67%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+
+    /* Medium screens */
+    .common-col-m6 {
+        width: 50%;
+    }
+}
+
+.text-24px {
+    font-size: 24px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.bg-light-grey {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.lg-padding {
+    padding: 12px 24px;
+}
+
+.mb-mt-16 {
+    margin: 16px 0;
+}
+
+@media (max-width: 600px) {
+    .sm-screen {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .lg-screen-4 {
+        width: 33.33%;
+    }
+}
+
+/* Medium screens (600px - 991px) - 6/12 columns (50%) */
+@media (min-width: 600px) and (max-width: 991px) {
+    .md-screen-6 {
+        width: 50%;
+    }
+}
+
+/* end common css */
+
+/* header */
+.header-container {
+    position: relative;
+    text-align: center;
+}
+
+.download-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Hide button on medium and large screens */
+@media screen and (min-width: 601px) {
+    .mobile-button {
+        display: none;
+    }
+}
+
+.my-slide {
+    position: relative;
+    overflow: hidden;
+    animation: animate-opacity 0.6s;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.content-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 16px;
+    width: 35%;
+}
+
+.content-box {
+    background-color: #000;
+    opacity: 0.6;
+    padding: 24px 32px;
+    border-radius: 16px;
+    transition: opacity 0.3s;
+}
+
+.content-box:hover {
+    opacity: 1;
+}
+
+.content-box h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: white;
+}
+
+.content-box hr {
+    border-color: rgba(255, 255, 255, 0.6);
+    margin: 20px 0;
+}
+
+.content-box p {
+    margin: 15px 0;
+    color: white;
+}
+
+.desktop-tour-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.desktop-tour-btn:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.mobile-tour-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+
+    .content-left,
+    .desktop-tour-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) {
+
+    .mobile-download-btn,
+    .mobile-tour-btn {
+        display: none;
+    }
+}

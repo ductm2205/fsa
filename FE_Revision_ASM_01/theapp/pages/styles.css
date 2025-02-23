@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif
+}
+
+body {
+    font-size: 16px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-light-grey {
+    background-color: #d3d3d3;
+}
+
+.bg-dark-grey {
+    background-color: #616161;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-red {
+    background-color: #f00;
+}
+
+.text-grey {
+    color: #404040;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-green {
+    color: #4CAF50;
+}
+
+.text-blue {
+    color: #0000ff;
+}
+
+.text-red {
+    color: #f00;
+}
+
+.text-orange {
+    color: #ffa500;
+}
+
+.text-yellow {
+    color: #fff000;
+}
+
+.text-cyan {
+    color: cyan;
+}
+
+.text-amber {
+    color: #ffc107;
+}
+
+.text-sand {
+    color: #fdf5e6;
+}
+
+.text-pink {
+    color: pink;
+}
+
+.text-black {
+    color: #000;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-64 {
+    margin-top: 64px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.p-lg {
+    padding: 16px;
+}
+
+.p-64 {
+    padding: 64px;
+}
+
+.p-32 {
+    padding: 32px;
+}
+
+.p-24 {
+    padding: 24px;
+}
+
+.p-16 {
+    padding: 16px;
+}
+
+.haft-opacity {
+    opacity: 0.5;
+}
+
+.br-large {
+    border-radius: 16px;
+}
+
+.br {
+    border-radius: 8px;
+}
+
+.x-lg-text {
+    font-size: 24px;
+}
+
+.x-size-64 {
+    font-size: 64px;
+}
+
+.x-size-48 {
+    font-size: 48px;
+}
+
+.f-right {
+    float: right;
+}
+
+header {
+    position: relative;
+}
+
+.d-center {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.common-button {
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+.common-image {
+    max-width: 100%;
+    height: auto;
+    width: 335;
+    height: 471;
+}
+
+.common-image:last-child {
+    filter: grayscale(100%);
+}
+
+.common-block {
+    display: block;
+    width: 100%;
+}
+
+
+/* */
+
+#hero-image {
+    min-width: 500px;
+}
+
+header button {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+header button:hover {
+    background-color: darkgreen;
+    color: #fff;
+}
+
+.left-block {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px;
+    width: 35%;
+}
+
+.download-block:hover {
+    opacity: 1;
+}
+
+.right-block {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 16px;
+}
+
+.right-block:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+ul:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer i:hover {
+    opacity: 0.5;
+}
+
+/* layout */
+.row-padding {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+.col {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .col.m6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 993px) {
+    .col.l8 {
+        width: calc(66.6666% - 8px);
+    }
+
+    .col.l4 {
+        width: calc(33.3333% - 8px);
+    }
+}
+
+@media (min-width: 768px) {
+    .row-padding {
+        flex-wrap: nowrap;
+    }
+}
+
+.row-features {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-features {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+    padding: 8px;
+}
+
+.s3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+@media (max-width: 600px) {
+    .col-features {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.half {
+    width: 50%;
+}
+
+
+/* responsive */
+
+.lg-d-none {
+    display: none;
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+    .md-d-none {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .lg-d-none {
+        display: block;
+    }
+
+}
+
+.sm-d-none {
+    display: none;
+}
+
+@media (min-width: 601px) {
+    .sm-d-none {
+        display: block;
+    }
+}
