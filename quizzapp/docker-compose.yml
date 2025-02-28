@@ -1,0 +1,30 @@
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: YourStrong!Passw0rd
+      ACCEPT_EULA: "Y"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    networks:
+      - default
+  
+  quizzapp:
+    build:
+      context: .
+      dockerfile: src/quizzapp.api/Dockerfile
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db,1433;Database=MyAppDb;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True
+    networks:
+      - default
+
+volumes:
+  mssql_data:
+
