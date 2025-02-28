@@ -1,7 +1,18 @@
+using Microsoft.EntityFrameworkCore;
+using vivustore.mvc.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Add this line after CreateBuilder
+builder.WebHost.UseUrls("http://0.0.0.0:80");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<ViVuStoreDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
 var app = builder.Build();
 

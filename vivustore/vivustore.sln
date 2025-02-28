@@ -5,6 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vivustore.mvc", "vivustore.mvc\vivustore.mvc.csproj", "{F677226F-8965-47D4-A90F-588095EE8F22}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Appendix", "Appendix", "{ADEC5AA1-6DDE-8C5C-433C-6412976FCAC4}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Users\ductr\Documents\FSA\NWEC\Appendix\MigrationCommand.md = ..\..\..\..\Users\ductr\Documents\FSA\NWEC\Appendix\MigrationCommand.md
+		..\..\..\..\Users\ductr\Documents\FSA\NWEC\Appendix\PackageCommand.md = ..\..\..\..\Users\ductr\Documents\FSA\NWEC\Appendix\PackageCommand.md
+		..\..\..\..\Users\ductr\Documents\FSA\NWEC\Appendix\RunCommand.md = ..\..\..\..\Users\ductr\Documents\FSA\NWEC\Appendix\RunCommand.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

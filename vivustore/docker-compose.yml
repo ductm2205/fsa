@@ -1,0 +1,24 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: db_container
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: newPassword@2k3
+      ACCEPT_EULA: "Y"
+
+  # vivustore-mvc:
+  #   build:
+  #     context: ./vivustore.mvc
+  #     dockerfile: Dockerfile
+  #     target: development
+  #   volumes:
+  #     - ./vivustore.mvc:/src
+  #   depends_on:
+  #     - mssql
+  #   ports:
+  #     - "5000:80"
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=development
+  #     - ConnectionStrings__DefaultConnection=Server=mssql;Database=VivuStore_dev;User=sa;Password=newPassword@2k3;
