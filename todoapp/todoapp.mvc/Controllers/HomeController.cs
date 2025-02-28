@@ -1,17 +1,14 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using todoapp.mvc.Data;
 using todoapp.mvc.Models;
 
 namespace todoapp.mvc.Controllers;
 
-public class HomeController : Controller
+public class HomeController(ILogger<HomeController> logger, TodoDbContext options) : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
+    private readonly ILogger<HomeController> _logger = logger;
+    private readonly TodoDbContext _options = options;
 
     public IActionResult Index()
     {

@@ -1,5 +1,3 @@
-using System;
-
 namespace todoapp.mvc.Models;
 
 public class BaseEntity
